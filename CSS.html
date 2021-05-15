@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Document</title>
+    <style>
+        header.hover {
+            animation-name: header;
+            animation-duration: 3;
+            animation-delay: 1;
+            animation-iteration-count: 999;
+        }
+        p.hover {
+            animation-name: header;
+            animation-duration: 3;
+            animation-delay: 1;
+            animation-iteration-count: 999;
+        }
+
+        .container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+        }
+
+        img {
+            display: block;
+            width: 500px;
+            height: 300px;
+        }
+
+    @keyframes header {
+        0% {transform: scale(0, 1);
+        opacty: 0;
+        }
+        50% {font-size: 20;
+        opacity: 0;
+        }
+        80% {font-size: 7;}
+        100% {font-size: 10;}
+        
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        
+        <h1 class="header">My Website</h1>
+        <p class="header">This example demonstrates responsive layout.</p>
+    </header>
+
+    <nav class="hover">
+
+    </nav>
+
+    <div class="floating">
+        <img src="images/thor.jpg", alt="thor">
+    </div>
+
+
+    <!-- Navigations -->
+    <nav>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </nav>
+    
+    <!-- Content -->
+    <div class="wrapper">
+        <aside class="left-col">
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div class="fake-img" style="height:200px;">Image</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos laudantium quibusdam fuga dolores blanditiis eligendi unde facere eum perferendis neque odio veniam minus labore distinctio, quod nostrum ab sint!</p>
+        </aside>
+        <main class="main-col">
+            <h2>Main Content 1</h2>
+            <h5>Title description</h5>
+            <div class="fake-img">Image</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident cupiditate sint suscipit temporibus molestiae aliquam voluptatibus. Eos, magnam aperiam repudiandae maxime fugiat hic, maiores, assumenda dicta labore totam debitis dolor!</p>
+            <h2>Main Content 2</h2>
+            <h5>Title description</h5>
+            <div class="fake-img">Image</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident cupiditate sint suscipit temporibus molestiae aliquam voluptatibus. Eos, magnam aperiam repudiandae maxime fugiat hic, maiores, assumenda dicta labore totam debitis dolor!</p>
+        </main>
+    </div>
+    <div>
+        <p class="quizzical">Hello</p>
+    </div>
+
+    <footer>
+        <div class="img"></div>
+        Footer
+    </footer>
+    <!--Fade in/out-->
+    <div class="container">
+        <img src="images/thor.jpg" alt="thor_image">
+        <div class="overlay">
+
+        </div>
+    </div>
+</body>
+</html>
