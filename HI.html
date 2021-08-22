@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HI.css">
+    <title>Document</title>
+    <style>
+        header.hover {
+            animation-name: header;
+            animation-duration: 3;
+            animation-delay: 1;
+            animation-iteration-count: 999;
+        }
+        p.hover {
+            animation-name: header;
+            animation-duration: 3;
+            animation-delay: 1;
+            animation-iteration-count: 999;
+        }
+
+        .container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+        }
+
+        img {
+            display: block;
+            width: 500px;
+            height: 300px;
+        }
+
+    @keyframes header {
+        0% {transform: scale(0, 1);
+        opacty: 0;
+        }
+        50% {font-size: 20;
+        opacity: 0;
+        }
+        80% {font-size: 7;}
+        100% {font-size: 10;}
+        
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        
+        <h1 class="header">JOIN THE SUPPORT</h1>
+        <p class="header">Help Us Fight Pollution By Signing The Petition.</p>
+    </header>
+
+    <nav class="hover">
+
+    </nav>
+
+    <!-- Content -->
+    <div class="wrapper">
+        <aside class="left-col">
+            <h1><b>About Composting</b></h1>
+            <h3>What is Composting?</h3>
+            <p>Composting is taking waste food (such as banana peels and egg shells) that cannot be eaten and converting it into usable fertiliser.</p>
+            <div class="fake-img" style="height:200px;">Image</div>
+            <h3>Why Should We Compost?</h3>
+            <p>We can use useless waste to be converted into usable plant food. This reduces a large portion of trash, as well as help the growth of many plants.</p>
+            <div class="fake-img" style="height:200px;">Image</div>
+            
+        </aside>
+        <main class="main-col">
+            <h2>How Can I Help?</h2>
+            <h5>Spoiler Alert: Its Easy!</h5>
+            <p>All you have to do is give us your name!</p>
+            <form>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" value="Insert first name here"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" value="Insert last name here"><br>
+                <input type="submit" value="submit">
+            </form>
+            <h2>Still Not Convinced?</h2>
+            <h3>Well, you're not the only one interested in composting!</h3>
+            <style>
+            </style>
+            <p>As of right now, <div class="class8">82, 364</div> people have signed the petition!</p>
+            <p>So what are you waiting for? Sign now!</p>
+        </main>
+    </div>
+    
+</body>
+</html>
