@@ -5,6 +5,11 @@ img {
     position: relative;
 }
 
+.compost_image {
+    width: 20%;
+    height: auto;
+}
+
 #tiny {
     width: 10%;
     height: auto;
@@ -37,16 +42,21 @@ div.wrapper {
     flex-wrap: wrap;
 }
 
-aside.left-col {
-    flex: 30%;
-    background-color: #9ddf23;
+div.left-col {
+    display: inline-block;
+    background-image: linear-gradient(#1abc9c, rgb(153, 226, 69));
     padding: 1.25rem; 
+    box-sizing: border-box;
+    width: 30%;
 }
 
-main.main-col {
-    flex: 70%;
+div.main-col {
+    vertical-align:top;
+    display: inline-block;
     padding: 1.25rem;
     background-image: linear-gradient(rgb(153, 226, 69), rgb(68, 226, 160));
+    box-sizing: border-box;
+    width: 70%;
 }
 
 footer {
